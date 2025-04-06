@@ -1,0 +1,24 @@
+div {
+    text-align: center;
+}
+
+body {
+    background-color: #17245b;
+}
+
+h1 {
+    color: #d32e21;
+    text-decoration-line: underline;
+    font-style: italic;
+}
+
+p {
+    color: white;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+img {
+    height: auto;
+    width: 350px;
+}

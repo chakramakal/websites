@@ -1,24 +1,42 @@
-div {
+:root {
+	--primary-color: #d32e21;
+	--bg-header-footer: #17245b;
+	--text-color-light: white;
+}
+
+/* Reset and base */
+body {
+	margin: 0;
+	font-family: sans-serif;
 	text-align: center;
 }
 
-body {
-	background-color: #17245b;
+div, main {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 1rem;
 }
 
 h1 {
-	color: #d32e21;
-	text-decoration-line: underline;
+	color: var(--primary-color);
+	text-decoration: underline;
 	font-style: italic;
 }
 
 p {
-	color: white;
-	margin-right: 80px;
-	margin-left: 80px;
+	margin: 1rem 0 1rem 0;
+	padding: 0 1rem;
 }
 
 img {
+	width: 100%;
+	max-width: 350px;
 	height: auto;
-	width: 350px;
+}
+
+header,
+footer {
+	background-color: var(--bg-header-footer);
+	color: var(--text-color-light);
+	padding: 1rem;
 }

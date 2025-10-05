@@ -1,6 +1,7 @@
 :root {
-	--primary-color: #d32e21;
-	--bg-header-footer: #17245b;
+	--primary-color: #ffffff;
+	--bg-body: #171717;
+	--bg-header-footer: #000000;
 	--text-color-light: white;
 }
 
@@ -9,6 +10,7 @@ body {
 	margin: 0;
 	font-family: sans-serif;
 	text-align: center;
+	background-color: var(--bg-body);
 }
 
 div, main {
@@ -24,10 +26,12 @@ h1 {
 }
 
 h2 {
+	color: var(--primary-color);
 	font-style: italic;
 }
 
 p {
+	color: var(--primary-color);
 	margin: 1rem 0 1rem 0;
 	padding: 0 1rem;
 }

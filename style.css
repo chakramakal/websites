@@ -1,11 +1,10 @@
 :root {
 	--primary-color: #ffffff;
+	--secondary-color: #E33737;
 	--bg-body: #171717;
 	--bg-header-footer: #000000;
-	--text-color-light: white;
 }
 
-/* Reset and base */
 body {
 	margin: 0;
 	font-family: sans-serif;
@@ -36,15 +35,18 @@ p {
 	padding: 0 1rem;
 }
 
+a {
+	color: var(--secondary-color);
+}
+
 img {
 	width: 100%;
 	max-width: 350px;
 	height: auto;
 }
 
-header,
-footer {
+header, footer {
 	background-color: var(--bg-header-footer);
-	color: var(--text-color-light);
+	color: var(--primary-color);
 	padding: 1rem;
 }

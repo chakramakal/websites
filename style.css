@@ -45,6 +45,18 @@ img {
 	height: auto;
 }
 
+.gallery {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.gallery img {
+	width: 100%;
+	max-width: 250px;
+}
+
 header, footer {
 	background-color: var(--bg-header-footer);
 	color: var(--primary-color);

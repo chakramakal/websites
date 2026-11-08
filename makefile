@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: Unlicense
 .POSIX:
 .SUFFIXES:
 .PHONY: build clean serve deploy

@@ -45,11 +45,6 @@ img {
 	height: auto;
 }
 
-main img {
-	max-width: 250px;
-	margin: 0.5rem;
-}
-
 header, footer {
 	background-color: var(--bg-header-footer);
 	color: var(--primary-color);

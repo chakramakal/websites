@@ -42,5 +42,9 @@ deploy: build
 		printf 'make: %s not found\n' $(WRANGLER) >&2; \
 		exit 1; \
 	}
+	@test -f $(SITE)/project || { \
+		printf 'make: %s/project not found\n' $(SITE) >&2; \
+		exit 1; \
+	}
 	$(WRANGLER) pages deploy $(OUT) \
-		--project-name "$$(printf '%s' '$(SITE)' | tr . -)"
+		--project-name "$$(cat $(SITE)/project)"

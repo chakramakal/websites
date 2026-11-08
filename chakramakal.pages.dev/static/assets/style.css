@@ -1,0 +1,161 @@
+:root {
+	--ink: #000000;
+	--paper: #ffffff;
+	--link: #1155cc;
+	--gutter: 1.5rem;
+	--col: 42rem;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	background-color: var(--paper);
+	color: var(--ink);
+	font-family: "Times New Roman", Times, "Liberation Serif", serif;
+	font-size: 12pt;
+	line-height: 1.5;
+}
+
+main {
+	box-sizing: border-box;
+	max-width: var(--col);
+	margin: 0 auto;
+	flex: 1;
+	width: 100%;
+	padding: 0 var(--gutter);
+	text-align: justify;
+	counter-reset: section;
+}
+
+p {
+	margin: 0 0 10pt 0;
+}
+
+h1 {
+	position: relative;
+	margin: 0 0 10pt 0;
+	padding-left: 36pt;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+h1 {
+	counter-increment: section;
+}
+
+h1::before {
+	content: counter(section) ".";
+	position: absolute;
+	left: 18pt;
+}
+
+h2 {
+	margin: 0 0 10pt 0;
+	font-size: 12pt;
+	font-weight: bold;
+	font-style: italic;
+}
+
+a {
+	color: var(--link);
+}
+
+h1:last-of-type + ul {
+	margin: 0 0 10pt 0;
+	padding-left: 36pt;
+	font-size: 11pt;
+	line-height: 1.15;
+	text-align: left;
+}
+
+h1:last-of-type + ul {
+	list-style: none;
+}
+
+h1:last-of-type + ul li {
+	position: relative;
+	margin: 0;
+}
+
+h1:last-of-type + ul li::before {
+	content: "\25CF";
+	position: absolute;
+	left: -18pt;
+}
+
+@media (max-width: 40rem) {
+	:root {
+		--gutter: 1.25rem;
+	}
+
+	main {
+		hyphens: auto;
+	}
+
+	h1 {
+		padding-left: 1.5rem;
+	}
+
+	h1::before {
+		left: 0;
+	}
+
+	h1:last-of-type + ul {
+		padding-left: 1.5rem;
+	}
+
+	h1:last-of-type + ul li::before {
+		left: -1.1rem;
+	}
+}
+
+@page {
+	size: A4;
+	margin: 1in;
+}
+
+@media print {
+	footer {
+		display: none;
+	}
+
+	main {
+		max-width: none;
+		padding: 0;
+	}
+}
+
+header {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: var(--col);
+	margin: 0 auto;
+	padding: 2rem var(--gutter) 1.5rem var(--gutter);
+	font-size: 24pt;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+}
+
+footer {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: var(--col);
+	margin: 0 auto;
+	padding: 1.5rem var(--gutter);
+	text-align: right;
+}
+
+footer a {
+	display: inline-block;
+	color: var(--link);
+}
+
+footer svg {
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: currentColor;
+}

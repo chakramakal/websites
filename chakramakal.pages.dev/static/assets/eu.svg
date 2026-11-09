@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<title>European Union</title>
+	<defs>
+		<path
+			id="star"
+			d="M0 -1.3 0.32 -0.44 1.24 -0.4 0.52 0.17 0.76 1.05
+				0 0.55 -0.76 1.05 -0.52 0.17 -1.24 -0.4
+				-0.32 -0.44z"
+		/>
+	</defs>
+	<path
+		d="M12 21S3 15.3 3 9a5 5 0 0 1 9-3
+			5 5 0 0 1 9 3c0 6.3-9 12-9 12z"
+		fill="#003399"
+	/>
+	<g fill="#ffcc00">
+		<use href="#star" x="12.00" y="6.40" />
+		<use href="#star" x="14.30" y="7.02" />
+		<use href="#star" x="15.98" y="8.70" />
+		<use href="#star" x="16.60" y="11.00" />
+		<use href="#star" x="15.98" y="13.30" />
+		<use href="#star" x="14.30" y="14.98" />
+		<use href="#star" x="12.00" y="15.60" />
+		<use href="#star" x="9.70" y="14.98" />
+		<use href="#star" x="8.02" y="13.30" />
+		<use href="#star" x="7.40" y="11.00" />
+		<use href="#star" x="8.02" y="8.70" />
+		<use href="#star" x="9.70" y="7.02" />
+	</g>
+</svg>

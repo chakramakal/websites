@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<title>Ireland</title>
+	<defs>
+		<path
+			id="heart"
+			d="M12 21S3 15.3 3 9a5 5 0 0 1 9-3
+				5 5 0 0 1 9 3c0 6.3-9 12-9 12z"
+		/>
+		<clipPath id="clip">
+			<use href="#heart" />
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip)">
+		<rect x="0" y="0" width="8" height="24" fill="#169b62" />
+		<rect x="8" y="0" width="8" height="24" fill="#ffffff" />
+		<rect x="16" y="0" width="8" height="24" fill="#ff883e" />
+	</g>
+	<use href="#heart" fill="none" stroke="#000000" />
+</svg>

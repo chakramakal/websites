@@ -1,3 +1,5 @@
+![Profile](/assets/profile.svg)
+
 # Introduction
 
 I am a 4th year mental health student nurse. This website is where I publish

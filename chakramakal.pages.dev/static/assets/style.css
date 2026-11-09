@@ -117,8 +117,9 @@ h1:last-of-type + ul li::before {
 }
 
 @media print {
+	header a,
 	footer {
-		display: none;
+		visibility: hidden;
 	}
 
 	main {
@@ -129,6 +130,9 @@ h1:last-of-type + ul li::before {
 
 header {
 	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 1.5rem 1fr 1.5rem;
+	align-items: center;
 	width: 100%;
 	max-width: var(--col);
 	margin: 0 auto;
@@ -139,23 +143,31 @@ header {
 	text-align: center;
 }
 
+header a {
+	display: block;
+}
+
+header a img,
+footer img {
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
 footer {
 	box-sizing: border-box;
+	display: flex;
+	gap: 0.5rem;
 	width: 100%;
 	max-width: var(--col);
 	margin: 0 auto;
 	padding: 1.5rem var(--gutter);
-	text-align: right;
 }
 
-footer a {
-	display: inline-block;
-	color: var(--link);
-}
-
-footer svg {
+main img {
 	display: block;
-	width: 1.5rem;
-	height: 1.5rem;
-	fill: currentColor;
+	width: 10rem;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto 10pt auto;
 }

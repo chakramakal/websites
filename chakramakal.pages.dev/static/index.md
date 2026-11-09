@@ -1,14 +1,21 @@
 # Introduction
 
-I am a 4th year student nurse. This website is intended for me to publish
-anything related to nursing or other learning I cannot publish under my other
-websites.
+I am a 4th year mental health student nurse. This website is where I publish
+nursing and other learning material that does not belong on my other websites.
 
 # Contact
 
-I would prefer to be contacted by email. I will set up an email associated with
-this site when I feel this page is mature enough to warrant its own domain.
+I would prefer to be contacted by email. I will set up an address for this site
+once it has grown enough to warrant its own domain. Until then, please
+[open an issue on my profile repository](https://github.com/chakramakal/chakramakal/issues/new).
 
 # Links
 
-* [Source code for this site](https://github.com/chakramakal/websites/tree/master/chakramakal.pages.dev)
+Flashcards for [Anki](https://apps.ankiweb.net/), released into the public
+domain. Download a deck and open it in Anki to import it.
+
+* [Mental Health Act 2001](https://github.com/chakramakal/flashcards/releases/latest/download/mental-health-act-2001.apkg)
+* [Criminal Law (Insanity) Act 2006](https://github.com/chakramakal/flashcards/releases/latest/download/criminal-law-insanity-act-2006.apkg)
+
+*These are study aids, not legal advice. Both Acts have been amended since they
+were enacted, so check the current text before relying on a detail.*

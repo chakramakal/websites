@@ -2,7 +2,7 @@
 
 # Introduction
 
-I am a 4th year mental health student nurse. This website is where I publish
+I am a mental health student nurse. This website is where I publish
 nursing and other learning material that does not belong on my other websites.
 
 # Contact

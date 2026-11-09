@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    id="svg598"
    version="1.1"
-   viewBox="-18.25879 0 151.49272 151.49272"
-   height="100.99514mm"
-   width="100.99514mm">
+   viewBox="-42.51 -24.24 200 200"
+   height="133.33333mm"
+   width="133.33333mm">
   <defs
      id="defs592" />
   <metadata
@@ -32,10 +32,10 @@
        transform="matrix(0.35277777,0,0,-0.35277777,25.922549,261.74819)">
       <rect
          transform="scale(1,-1)"
-         y="-535.83154"
-         x="46.792991"
-         height="429.42816"
-         width="429.42816"
+         y="-604.5421"
+         x="-21.9518"
+         height="566.9291"
+         width="566.9291"
          id="rect1054"
          style="fill:#800000;fill-opacity:1;stroke:none;stroke-width:1.12440979" />
       <g

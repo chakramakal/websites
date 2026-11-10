@@ -63,6 +63,7 @@ h6 {
 	text-align: left;
 	text-wrap: balance;
 	hyphens: none;
+	font-weight: bold;
 	break-after: avoid;
 }
 
@@ -70,7 +71,6 @@ h1 {
 	position: relative;
 	padding-left: var(--indent);
 	font-size: 1.5em;
-	font-weight: bold;
 	counter-increment: section;
 }
 
@@ -81,30 +81,23 @@ h1::before {
 }
 
 h2 {
-	font-size: 1.25em;
-	font-weight: bold;
+	font-size: 1.3em;
 }
 
 h3 {
-	font-size: 1.1em;
-	font-weight: bold;
+	font-size: 1.2em;
 }
 
 h4 {
-	font-size: 1em;
-	font-weight: bold;
+	font-size: 1.1em;
 }
 
 h5 {
-	font-size: 1em;
-	font-weight: bold;
-	font-style: italic;
+	font-size: 1.05em;
 }
 
 h6 {
 	font-size: 1em;
-	font-weight: normal;
-	font-style: italic;
 }
 
 main ul,

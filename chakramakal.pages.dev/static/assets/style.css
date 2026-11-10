@@ -301,11 +301,6 @@ footer {
 	}
 }
 
-@page {
-	size: A4;
-	margin: 1in;
-}
-
 @media print {
 	header a,
 	footer {

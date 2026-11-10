@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"
+	width="400" height="400" role="img" aria-label="TEST IMAGE 400x400">
+	<rect width="400" height="400" fill="#000000" />
+	<rect
+		x="6"
+		y="6"
+		width="388"
+		height="388"
+		fill="none"
+		stroke="#ffffff"
+		stroke-width="4"
+		stroke-dasharray="14 10"
+	/>
+	<path
+		d="M0 0L400 400M400 0L0 400"
+		stroke="#ffffff"
+		stroke-width="2"
+		opacity="0.25"
+	/>
+	<text
+		x="200"
+		y="210"
+		fill="#ffffff"
+		font-family="Arial, Helvetica, sans-serif"
+		font-size="30"
+		font-weight="bold"
+		text-anchor="middle"
+	>TEST IMAGE 400x400</text>
+</svg>

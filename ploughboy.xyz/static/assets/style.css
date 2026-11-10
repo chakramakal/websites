@@ -98,6 +98,7 @@ header img {
 }
 
 main {
+	counter-reset: h1 h2 h3 h4 h5 h6;
 	box-sizing: border-box;
 	flex: 1;
 	width: 100%;
@@ -126,36 +127,97 @@ h5,
 h6 {
 	margin: 1.4em 0 0.4em 0;
 	font-family: var(--head-font);
+	font-weight: bold;
 	line-height: 1.25;
 	text-align: left;
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
 	text-wrap: balance;
 	hyphens: none;
 	break-after: avoid;
 }
 
 h1 {
-	font-size: 1.75em;
+	counter-increment: h1;
+	counter-set: h2 0 h3 0 h4 0 h5 0 h6 0;
+	font-size: 1.9em;
 }
 
 h2 {
-	font-size: 1.5em;
+	counter-increment: h2;
+	counter-set: h3 0 h4 0 h5 0 h6 0;
+	font-size: 1.6em;
 }
 
 h3 {
-	font-size: 1.3em;
+	counter-increment: h3;
+	counter-set: h4 0 h5 0 h6 0;
+	font-size: 1.4em;
 }
 
 h4 {
-	font-size: 1.15em;
+	counter-increment: h4;
+	counter-set: h5 0 h6 0;
+	font-size: 1.25em;
 }
 
 h5 {
-	font-size: 1.05em;
+	counter-increment: h5;
+	counter-set: h6 0;
+	font-size: 1.1em;
 }
 
 h6 {
-	color: var(--muted-color);
+	counter-increment: h6;
 	font-size: 1em;
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+	display: inline-block;
+	margin-right: 0.6em;
+	font-family: "Times New Roman", Times, "Liberation Serif", serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+h1::before {
+	content: counter(h1, upper-roman);
+}
+
+h2::before {
+	content: counter(h1, upper-roman) "/" counter(h2, upper-roman);
+}
+
+h3::before {
+	content: counter(h1, upper-roman) "/" counter(h2, upper-roman) "/"
+		counter(h3, upper-roman);
+}
+
+h4::before {
+	content: counter(h1, upper-roman) "/" counter(h2, upper-roman) "/"
+		counter(h3, upper-roman) "/" counter(h4, upper-roman);
+}
+
+h5::before {
+	content: counter(h1, upper-roman) "/" counter(h2, upper-roman) "/"
+		counter(h3, upper-roman) "/" counter(h4, upper-roman) "/"
+		counter(h5, upper-roman);
+}
+
+h6::before {
+	content: counter(h1, upper-roman) "/" counter(h2, upper-roman) "/"
+		counter(h3, upper-roman) "/" counter(h4, upper-roman) "/"
+		counter(h5, upper-roman) "/" counter(h6, upper-roman);
+}
+
+main:not(:has(:is(h1, h2, h3, h4, h5, h6) ~ :is(h1, h2, h3, h4, h5, h6)))
+	:is(h1, h2, h3, h4, h5, h6)::before {
+	content: none;
 }
 
 main ul,

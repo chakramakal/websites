@@ -155,7 +155,7 @@ main ol {
 	margin: 0 0 var(--gap) 0;
 	padding-left: var(--indent);
 	font-size: 0.92rem;
-	line-height: 1.15;
+	line-height: 1.3;
 	text-align: left;
 }
 
@@ -165,6 +165,16 @@ main ul {
 
 main li {
 	margin: 0;
+}
+
+main li + li {
+	margin-top: 0.35rem;
+}
+
+main li ul,
+main li ol {
+	margin: 0.35rem 0 0 0;
+	padding-left: 1.5rem;
 }
 
 main blockquote {

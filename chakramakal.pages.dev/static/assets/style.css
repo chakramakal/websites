@@ -2,6 +2,7 @@
 	--ink: #000000;
 	--paper: #ffffff;
 	--link: #1155cc;
+	--visited: #551a8b;
 	--gutter: 1.5rem;
 	--col: 42rem;
 	--gap: 0.8rem;
@@ -24,6 +25,19 @@ body {
 
 a {
 	color: var(--link);
+}
+
+a:visited {
+	color: var(--visited);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a[href$=".apkg"]::after {
+	content: " (.apkg)";
+	font-size: 0.85em;
 }
 
 a:focus-visible {

@@ -126,10 +126,13 @@ main li {
 
 main img {
 	display: block;
-	width: 10rem;
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto var(--gap) auto;
+}
+
+main > p:first-child > img:only-child {
+	width: 10rem;
 }
 
 header {

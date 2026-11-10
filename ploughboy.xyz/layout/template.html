@@ -4,13 +4,30 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Ploughboy" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="color-scheme" content="dark" />
 	<title>Ploughboy: %%TITLE%%</title>
-	<link rel="icon" type="image/x-icon" href="/assets/ico.ico" />
+	<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
 	<link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
 	<header>
-		<a href="/"><img src="/assets/logo.png" alt="Logo" /></a>
+		<nav class="left" aria-label="Primary">
+			<a href="/music.html">music</a>
+			<a href="/shop.html">shop</a>
+		</nav>
+		<a class="logo" href="/" aria-label="Home" title="Home">
+			<img
+				src="/assets/logo.svg"
+				alt="Ploughboy"
+				width="400"
+				height="200"
+			/>
+		</a>
+		<nav class="right" aria-label="Secondary">
+			<a href="/live.html">live</a>
+			<a href="/social.html">social</a>
+		</nav>
 	</header>
 	<main>
 %%CONTENT%%

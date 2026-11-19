@@ -23,10 +23,19 @@ build:
 		t=$${f##*/}; \
 		t=$${t%.md}; \
 		case $$t in index) t=home ;; esac; \
+		l=$${f#./}; \
+		l=$${l%%/*}; \
+		tpl=$(SITE)/layout/$$l.html; \
+		test -f "$$tpl" || tpl=$(TPL); \
+		p=$${f#./}; \
+		p=$${p#*/}; \
+		p=$${p%.md}; \
+		case $$p in index) p= ;; */index) p=$${p%index} ;; esac; \
 		$(LOWDOWN) -Thtml "$(SRC)/$$f" | \
-			sed -e '/%%CONTENT%%/r /dev/stdin' $(TPL) | \
+			sed -e '/%%CONTENT%%/r /dev/stdin' "$$tpl" | \
 			sed -e '/%%CONTENT%%/d' \
 				-e "s|%%TITLE%%|$$t|" \
+				-e "s|%%PATH%%|$$p|g" \
 			> "$(OUT)/$${f%.md}.html"; \
 	done
 

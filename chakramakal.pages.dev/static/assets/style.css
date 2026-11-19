@@ -45,6 +45,11 @@ a:focus-visible {
 	outline-offset: 2px;
 }
 
+body:lang(ml) {
+	font-family: "Noto Serif Malayalam", "Noto Sans Malayalam",
+		"Nirmala UI", Kartika, serif;
+}
+
 main {
 	box-sizing: border-box;
 	flex: 1;

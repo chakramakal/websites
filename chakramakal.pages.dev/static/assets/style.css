@@ -264,13 +264,18 @@ main > p:first-child > img:only-child {
 
 header {
 	box-sizing: border-box;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
 	width: 100%;
 	max-width: var(--col);
 	margin: 0 auto;
 	padding: 2rem var(--gutter) 1.5rem var(--gutter);
 }
 
-header a {
+header > a {
 	display: flex;
 	gap: 0.75rem;
 	align-items: center;
@@ -288,6 +293,76 @@ header .banner {
 	min-width: 0;
 	width: 17.5rem;
 	height: auto;
+}
+
+.lang {
+	flex: none;
+	position: relative;
+}
+
+.lang summary {
+	box-sizing: border-box;
+	padding: 0.25rem 0;
+	cursor: pointer;
+	list-style: none;
+}
+
+.lang summary::-webkit-details-marker {
+	display: none;
+}
+
+.lang summary::after {
+	content: "";
+	display: inline-block;
+	width: 0.4em;
+	height: 0.4em;
+	margin-left: 0.5em;
+	border-right: 1px solid var(--ink);
+	border-bottom: 1px solid var(--ink);
+	transform: translateY(-0.2em) rotate(45deg);
+}
+
+.lang[open] summary::after {
+	transform: translateY(0.1em) rotate(225deg);
+}
+
+.lang summary:focus-visible {
+	outline: 2px solid var(--link);
+	outline-offset: 2px;
+}
+
+.lang ul {
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	right: 0;
+	min-width: 6rem;
+	margin: 0.25rem 0 0 0;
+	padding: 0.25rem 0;
+	border: 1px solid var(--ink);
+	background-color: var(--paper);
+	list-style: none;
+}
+
+.lang li a {
+	display: block;
+	padding: 0.25rem 0.6rem;
+	white-space: nowrap;
+}
+
+.lang span {
+	display: inline-block;
+}
+
+.lang a:visited {
+	color: var(--link);
+}
+
+.lang a[aria-current] {
+	color: var(--ink);
+	font-weight: bold;
+	text-decoration: none;
 }
 
 footer img {
@@ -308,15 +383,8 @@ footer {
 	padding: 1.5rem var(--gutter);
 }
 
-footer nav {
-	display: flex;
-	gap: 0.75rem;
-	margin-right: auto;
-	font-size: 0.92rem;
-}
-
 footer p {
-	flex: 1 1 100%;
+	flex: 1 1 auto;
 	margin: 0;
 	font-size: 0.92rem;
 }
@@ -327,10 +395,21 @@ footer p {
 		--indent: 1.5rem;
 		--num: 0;
 	}
+
+	header {
+		padding-top: 3.25rem;
+	}
+
+	.lang {
+		position: absolute;
+		top: 0.75rem;
+		right: var(--gutter);
+	}
 }
 
 @media print {
 	header a,
+	header details,
 	footer {
 		visibility: hidden;
 	}

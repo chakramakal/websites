@@ -1,4 +1,5 @@
 :root {
+	color-scheme: light dark;
 	--ink: #000000;
 	--paper: #ffffff;
 	--link: #1155cc;
@@ -404,6 +405,19 @@ footer p {
 		position: absolute;
 		top: 0.75rem;
 		right: var(--gutter);
+	}
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--ink: #e8e8e8;
+		--paper: #121212;
+		--link: #8ab4f8;
+		--visited: #c58af9;
+	}
+
+	header .banner {
+		filter: invert(1);
 	}
 }
 

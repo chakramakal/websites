@@ -1,5 +1,3 @@
-![Profile](/assets/profile.svg)
-
 # Introduction
 
 I am a mental health student nurse. This website is where I publish

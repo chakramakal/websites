@@ -32,5 +32,6 @@ The output goes to `out/<site>`.
 
 ## Licence
 
-The code is released under the Unlicense, see `LICENSE.md`. Each site's
-content is licensed as stated on that site.
+The code is released under the Unlicense, see `LICENSE.md`. The content of
+each site is licensed as stated on that site, except that the content of
+`ploughboy.xyz`, including its logo, is not covered by the Unlicense.
